@@ -89,7 +89,7 @@ describe "We can create complex, nested Hashes by implementing four methods:" do
     describe "builds on the hash returned by monopoly_with_third_tier, updating each of the nested hashes inside the :names hash so that" do
       describe "the hash assigned to :reading_railroad includes" do
         it "a :mortgage_value key set to 100" do
-          expect(monopoly_with_fourth_tier[:railroads][:names][:reading_railroad][:mortgage_value]).to eq(100)
+          expect(monopoly_with_fourth_tier[:railroads][:names][:reading_railroad][:mortgage_value]).to eq("$100")
         end
       end
       describe "the hash assigned to :pennsylvania_railroad includes" do
